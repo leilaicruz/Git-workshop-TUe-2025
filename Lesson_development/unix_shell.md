@@ -8,13 +8,11 @@ Lesson: 11:45-12:30
 
 Lunch: 12:30 - 13:30
 
-## Preparation in my terminal 
+## Preparation in my terminal
 
-- Write, if I use the terminal of the WSL 
+- Open the terminal in Desktop 
+    - Goes to Desktop and open terminal here
 
-```bash
-cd /mnt/c/Users/linigodelacruz/Desktop/
-```
 - Remove everything that is front '$' for a better view of commands:
 
 ```bash
@@ -31,6 +29,22 @@ export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 ```bash
 tail -f ~/.bash_history
 ```
+# Description of our end goal with this lesson 
+
+## Lets build a file structure as :
+
+(Go to slides to visualize it)
+
+Thesis
+|── data/
+│   |── a.dat
+│   |── b.dat
+│   |── c.dat
+|── docs/
+|── scripts/
+      |── raw_data_processing.py
+manuscript.tex
+
 
 # Description of the shell before commands
 The shell typically uses $ as the prompt, but may use a different symbol. In the examples for this lesson, we’ll show the prompt as $. Most importantly, do not type the prompt when typing commands. Only type the command that follows the prompt. This rule applies both in these lessons and in lessons from other sources. Also note that after you type a command, you have to press the Enter key to execute it.
@@ -116,17 +130,6 @@ Break : 15 mins
 - Create a directory hierarchy that matches a given diagram.
 - Delete, copy and move specified files and/or directories.
 
-## Lets build a file structure as :
-(Go to slides to visualize it)
-Thesis
-|── data/
-│   |── a.dat
-│   |── b.dat
-│   |── c.dat
-|── docs/
-|── scripts/
-      |── raw_data_processing.py
-manuscript.tex
 
 ## Build the file structure
 
@@ -143,7 +146,12 @@ cd ..
 touch manuscript.tex
 ```
 
-- check with `tree.` 
+- check the file structure with 
+
+```bash
+ls -R
+```
+
 
 ## Moving files and directories
 
@@ -157,15 +165,17 @@ mv data/a.dat data/optical_absorbance_600nm.dat
 ## Copying files , copy the manuscript.tex to inside the docs folder
 
 ```bash
-cp manuscript.tex data/docs/manuscript.tex
+cp manuscript.tex docs/manuscript.tex
 ```
-- create a thesis backup 
+- create a thesis backup (move to the Thesis parent folder)
 
 ```bash
 cp -r Thesis Thesis-backup
 ```
 
 ## Removing files
+
+- Go to the Thesis folder
 
 ```bash
 rm manuscript.tex

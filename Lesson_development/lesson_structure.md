@@ -14,12 +14,30 @@
 
 12:30- 13:30 Lunch
 
-13:30 Start with Menti Poll about Git Facts (https://www.mentimeter.com/app/presentation/alfb813jq54pc9qjm9t9vw3p3ehxbkom/edit?question=v5oiwo8qd8sw)
+13:30 - 13:45 Git intro presentation
 
-13:45-14:00 Intro about Git 
-
-14:00- 16:30 Set up a Local git project and explore its history 
+13:45- 16:30 Set up a Local git project and explore its history 
 
 
 ## Day 2
+
+09:30-12:30 – Git remotes (Github)
+
+11:30-11:45- Break
+
+11:45-12:30 - Git remotes (Github)
+
+12:30 – 13:30 – Lunch 
+
+13:30- 14:30 Collaboration 
+
+    - Dealing with conflicts when working in the same project
+
+14:30 – 14:45 Break 
+
+14:45-16:30 Get to know 4TU.ResearchData
+
+Using the 4TU.ResearchData data repository for your data management as a researcher. 
+
+
 

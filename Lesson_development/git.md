@@ -1,6 +1,6 @@
 # LECTURE NOTES: Version Control with Git
 
-**Instructor:** *Leila Inigo de la Cruz*
+**Instructor:** *Leila Iñigo de la Cruz*
 
 
 
@@ -34,7 +34,7 @@ This command will erase all the commands you've previously executed in your term
 - Write
 
 ```bash
-cd /mnt/c/Users/linigodelacruz/Desktop/
+cd /mnt/c/Users/linigodelacruz/OneDrive - Delft University of Technology/
 ```
 - Remove everything that is front '$' for a better view of commands:
 
@@ -58,9 +58,10 @@ Useful shortcuts for the App Windows Terminal (Preview) on Windows 10.
 ## PART 1
 ### INTRODUCTION [10 min]
 
-> Version control systems start with a base version of a document and then record changes you make each step of the way.
 
-> Presentation notes 
+> Presentation notes (Intro)
+
+> The intro has a [menti poll embedded](https://www.mentimeter.com/app/presentation/alfb813jq54pc9qjm9t9vw3p3ehxbkom/edit?question=v5oiwo8qd8sw)
 
 ### 1.  SETTING UP GIT : (Lecture begins) [6 min]
 > Sometimes, the shortcut on the Windows menu for Git Bash won't work. In such a case: go to the installation folder (usually `C:/Git`) and double-click on `git-bash.exe` 
@@ -173,21 +174,26 @@ any other Git command.
 > The script will compute the mean of an array. 
 
 
-* Create and modify file
+
+* Create the file
 
     ```shell
-    nano calculate_mean.py
+    touch calculate_mean.py
     ```
-* Type code
+* Modify file
 
-    ```python
+```shell
+nano calculate_mean.py
+```
+
+```python
     import numpy as np
 
     def calculate_mean(data):
         mean = np.mean(data)
         return mean
 
-    ```
+```
 * Check that the file is in the repository
 
 ```shell
@@ -263,7 +269,7 @@ The file will have its original line endings in your working directory |**
 Creates a snapshot of the changes in the repository's history tree.
 
 ```shell
-git commit -m "create script calculate_mean.py"
+git commit -m "create script for analysis"
 ```
 
 > `git commit -a` or `--all` "stage all changes and write them to history"
@@ -308,7 +314,7 @@ git commit -m "create script calculate_mean.py"
  git diff 
 ```
 
-> Shows the difference between the current state and the most recently saved version (last commit)
+> Shows the difference between the current state (unstaged) and the most recently saved version (last commit)
 
 #### c. Add and Commit
 ```shell
@@ -378,14 +384,11 @@ git commit -m "add some treatments for patients"
 > display a tree of the directory to see the behaviour so far :
 
 ```bash
-sudo apt-get install tree
-tree .
+ls -R
 ```
 or in git bash 
 
-```bash
-cmd //c tree //a
-```
+
 **go to slides to explain**
 
 > Go again to the illustration to visually show the history of the project
@@ -461,7 +464,7 @@ git status --ignored
 
 #### c. Answers
 
-* **Create new repository, use the modify-add-commit cycle, and recover older versions.**
+* **Create new repository, use the modify-add-commit cycle.**
 
 1. Create and initialize a repository called ‘my-repo’. 
 
