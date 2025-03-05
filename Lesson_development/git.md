@@ -62,6 +62,7 @@ Useful shortcuts for the App Windows Terminal (Preview) on Windows 10.
 > Presentation notes (Intro)
 
 > The intro has a [menti poll embedded](https://www.mentimeter.com/app/presentation/alfb813jq54pc9qjm9t9vw3p3ehxbkom/edit?question=v5oiwo8qd8sw)
+> open the mentimeter in the laptop and put it in presenter view
 
 ### 1.  SETTING UP GIT : (Lecture begins) [6 min]
 > Sometimes, the shortcut on the Windows menu for Git Bash won't work. In such a case: go to the installation folder (usually `C:/Git`) and double-click on `git-bash.exe` 
@@ -807,7 +808,11 @@ cd ~/Desktop/patients
 
 ### 9. CONFLICTS (Demo) [15 min]
 
-> Explanation of when a conflict can happen: "A conflict arises when two collaborators make changes to the same line in a file, or if ones tries to push their changes without having the most updated version from the remote server, or when a file has been deleted by one collaborator, but edited by another."
+> Explanation of when a conflict can happen: 
+"A conflict arises when two collaborators make changes to the same line in 
+a file, or if ones tries to push their changes without having the most
+ updated version from the remote server, or when a file has been deleted 
+ by one collaborator, but edited by another."
 
 > go to slides to show the conflic situation
 
@@ -817,8 +822,11 @@ cd ~/Desktop/patients
 
 situation: helper tries to push a change to an already updated remote , without doing the pull first 
 
+requirements: the helper (collaborator) need to have the version of the project where the script is created with the docstring created. Then : 
 * [Instructor]: explains how to add collaborators to a repository in GitHub. He adds helper as collaborator.
-* [Instructor]: edits local `calculate_mean.py`; modifies the docstring line as follows: `This function calculates the mean of an array, but it is silly because it uses a different numpy function`. Add, commit and **pull** and **push** the changes.
+* [Instructor]: edits local `calculate_mean.py`; modifies the docstring line as follows: 
+`This function calculates the mean of an array, but it is silly because it uses a different numpy function`. 
+Add, commit and **pull** and **push** the changes.
 
 * [Helper]: Clone instructor's repo; edits `calculate_mean.py` 
 * [Helper]: Modifies the docstring line as follows: `This function computes the mean of a **one-dimensional** array` Adds, commits and **pushes** changes to remote. 
@@ -826,7 +834,8 @@ The conflict arises because the helper needs to first pull and update its local 
 
 
 #### b. Solve conflict 
-* [Instructor/helper]: explains why the conflict occurred and how to solve it by  editing `calculate_mean.py` and deciding what changes to keep. Then: add, commit,and  **push**.
+* [Instructor/helper]: explains why the conflict occurred and how to solve it by  editing `calculate_mean.py` 
+and deciding what changes to keep. Then: add, commit,and  **push**.
 
 
 ### 10. COLLABORATING  [15 min]
