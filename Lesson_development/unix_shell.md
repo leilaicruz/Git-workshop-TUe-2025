@@ -133,6 +133,8 @@ Break : 15 mins
 
 ## Build the file structure
 
+- go to Desktop and create the following structure there
+
 ```bash
 mkdir Thesis
 cd Thesis
