@@ -853,7 +853,7 @@ git clone git@github.com:leilaicruz/workshop-checkin.git
 
 #### b. Create a Check-in file
 
-> Make a copy of `check-in/template.md` in the same Directory; remane the file using a unique name (e.g. three first letters of your name and the last two digits of your phone number. Mind the file extension ".md")
+> Make a copy of `check-in/template.md` in the same Directory; remane the file using a unique name (e.g. three first letters of your name and the last two digits of your phone number. Mind the file extension ".md") mine will be lei41
 
 ```shell
 cd workshop-check-in
@@ -861,7 +861,7 @@ cp check-in/template.md check-in/<my-name-file>.md
 ```
 
 #### c. Edit your Check-in file 
-> Edit `<my-name-file>.md` and change the content. Write from which university are you from and what is the field of your PhD. 
+> Edit `<my-name-file>.md` and change the content. Write from which university are you from and what is the field of your PhD. in my case: Univeristy: TU Delft, research field: functional genomics 
 
 ```shell
 nano check-in/<my-name-file>.md
@@ -900,7 +900,7 @@ git checkout leila_checking
 ```
 
 #### c. Edit your Check-in file 
-> Edit `<my-name-file>.md` and change the content. Write from which university are you from and what is the field of your PhD. 
+> Edit `<my-name-file>.md` and change the content. Write your current position and institute 
 
 ```shell
 nano check-in/<my-name-file>.md
